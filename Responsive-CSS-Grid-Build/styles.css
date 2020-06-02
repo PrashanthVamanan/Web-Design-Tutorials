@@ -79,6 +79,180 @@ h4 {
   font-size: 1.1em;
 }
 
+/* mobile styles */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+}
+
+/* Nav Section Styles Starts */
+
+.site-nav {
+  margin: 0 20px;
+}
+
+.site-nav ul {
+  display: none;
+}
+
+.site-nav h1 {
+  grid-column: 1/4;
+  grid-row: 1;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--primary);
+}
+
+/* Nav Section Styles Ends */
+
+/* Header Section Styles Starts */
+
+#welcome {
+  padding: 0 20px 20px 20px; /* 0 top, right 20, bottom 20, left 20 */
+}
+
+.welcome-text {
+  grid-column: 1/6;
+}
+
+.welcome-image {
+  grid-column: 6/9;
+}
+
+.welcome-image img {
+  width: 200%;
+}
+
+.welcome-text a {
+  margin: 20px 0;
+}
+
+/* Header Section Styles Ends */
+
+/* Portfolio Section Styles Starts */
+
+#portfolio {
+  background: url('./assets/square_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 30px 20px;  /* top,bottom ; left, right */
+}
+
+#portfolio h3 {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.projects a {
+  grid-column: 1/9;
+  margin: 20px 0;
+  display: flex;
+}
+
+.projects a * {
+  margin: 0 20px;
+  max-width: 40%;
+  align-self: center;
+}
+
+.projects h4 {
+  color: #9994f7;
+}
+
+/* Portfolio Section Styles Ends */
+
+/* Skills Section Styles Starts */
+
+#skills {
+  padding: 30px 20px;
+  background: #07083E;
+}
+
+#skills h3 {
+  text-align: center;
+}
+
+#skills ul {
+  margin: 40px 0;
+}
+
+#skills li {
+  padding: 10px;
+  background: rgba(0,0,0,0.2);
+  grid-column: span 4; /* automatically arranges each item in the grid to four columns */
+  text-align: center;
+}
+
+#skills img {
+  height: 80px;
+  margin: 10px auto;
+}
+
+/* Skills Section Styles Ends */
+
+/* Contact Section Styles Starts */
+
+#contact {
+  padding: 30px 20px;
+  background: #080936;
+}
+
+#contact h3, #contact p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#contact form {
+  width: 80%;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#contact input, #contact textarea {
+  width: 100%;
+  margin: 10px 0;
+}
+
+#contact button {
+  margin-top: 10px;
+}
+
+/* Contact Section Styles Ends */
+
+/* Footer Section Styles Starts */
+
+footer {
+  padding: 30px 20px;
+  background-color: #14153D;
+  background-image: url('./assets/footer_image.png');
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+footer .copyright{
+  grid-column: 1/3;
+  font-size: 0.8em;
+}
+
+footer .social {
+  grid-column: 7/9;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer li {
+  margin: 0 6px;
+}
+
+footer img {
+  width: 20px;
+}
+
+/* Footer Section Styles Ends */
+
 /* small tablet styles */ 
 @media screen and (min-width: 620px) {
 
@@ -96,18 +270,4 @@ h4 {
   body {
     font-size: 20px;
   }
-}
-
-
-/* grid testing */
-.projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
-}
-
-.projects a {
-  text-align: center;
-  background: gray;
-  padding: 20px;
 }
