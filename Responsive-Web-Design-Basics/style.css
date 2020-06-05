@@ -181,3 +181,70 @@ footer a{
     text-decoration: none;
 }
 
+/* MEDIA QUERIES */
+
+/* Screens having width of 700px or less (tablets) */
+@media screen and (max-width: 768px) {
+
+    header nav {
+        float: none;
+        clear: left;
+        width: 100%;
+    }
+
+    header nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1.logo {
+        margin: 10px auto 0; /* 10px to top, auto left and right, 0 for bottom */
+        float: none;
+    }
+
+    header nav ul li{
+        margin: 10px auto;
+        width: 20%;
+        padding: 0;
+        text-align: center;
+    }
+
+    #featured li{
+        width: 48%;
+    }
+
+    footer ul {
+        width: 48%;
+        text-align: center;
+    }
+
+}
+
+/* Screens having width of 500px or less (mobiles) */
+@media screen and (max-width: 500px) {
+
+    #featured li{
+        width: 90%;
+        margin: 20px 5%;
+    }
+
+    footer ul {
+        width: 98%;
+        text-align: center;
+    }
+
+    #home-menu li {
+        float: none;
+        width: 96%;
+        margin: 20px 2% !important;
+        padding: 0;
+    }
+
+    #main-banner img {
+        position: relative;
+        width: 180%;
+        left: -40%;
+    }
+
+}
+
